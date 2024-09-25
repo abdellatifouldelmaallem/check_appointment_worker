@@ -1,0 +1,22 @@
+{
+  "name": "check_appointment_worker",
+  "version": "1.0.0",
+  "description": "this worker check every 10min if there is an appointment availible",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdellatifouldelmaallem/check_appointment_worker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdellatifouldelmaallem/check_appointment_worker/issues"
+  },
+  "homepage": "https://github.com/abdellatifouldelmaallem/check_appointment_worker#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  }
+}
