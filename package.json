@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/abdellatifouldelmaallem/check_appointment_worker#readme",
   "dependencies": {
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.1-security",
+    "node-schedule": "^2.1.1"
   }
 }
