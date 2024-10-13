@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/abdellatifouldelmaallem/check_appointment_worker#readme",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "fs": "^0.0.1-security",
     "node-schedule": "^2.1.1",
     "puppeteer": "^23.5.3"
