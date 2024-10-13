@@ -9,5 +9,5 @@ const job = schedule.scheduleJob('*/2 * * * * *', ()=>{
     i++;
     if (i === n) {
         job.cancel()
-    }
+    } 
 })
