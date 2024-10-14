@@ -28,13 +28,8 @@ async function check_appointement_worker(){
 
     // Wait for navigation after login
     await page.waitForNavigation();
-    let img = page.$('img');
-    if (img) {
-        const imageSrc = await page.evaluate(img => img.src, firstImageElement);
-        console.log('First image source:', imageSrc);
-    } else {
-        console.log('No image found on the page.');
-    }
+    
+    await page.waitForSelector('#advanced');
 
      // Close the browser
      await browser.close();
