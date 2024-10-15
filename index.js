@@ -1,18 +1,6 @@
 const schedule = require('node-schedule');
-const http    = require('http')
 const puppeteer = require('puppeteer');
 require('dotenv').config();
-
-// real time '*/20 * * * *'
-// let i = 0;
-// let n = 3;
-// const job = schedule.scheduleJob('*/2 * * * * *', ()=>{
-//     console.count("test")
-//     i++;
-//     if (i === n) {
-//         job.cancel()
-//     } 
-// })
 
 async function check_appointement_worker() {
     const browser = await puppeteer.launch({ headless: false });
