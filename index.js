@@ -44,13 +44,13 @@ async function check_appointement_worker() {
     const page = await browser.newPage();
 
     // Log network requests and responses for debugging
-    page.on('request', request => {
-        console.log('Request:', request.url(), request.method());
-    });
+    // page.on('request', request => {
+    //     console.log('Request:', request.url(), request.method());
+    // });
 
-    page.on('response', response => {
-        console.log('Response:', response.url(), response.status());
-    });
+    // page.on('response', response => {
+    //     console.log('Response:', response.url(), response.status());
+    // });
 
     try {
         // Navigate to the login page
@@ -67,8 +67,8 @@ async function check_appointement_worker() {
         await page.waitForNavigation({ waitUntil: 'networkidle0', timeout: 60000 });
 
         // Check cookies to verify if the session is established
-        const cookies = await page.cookies();
-        console.log('Cookies after login:', cookies);
+        // const cookies = await page.cookies();
+        // console.log('Cookies after login:', cookies);
 
         // Wait for the <a> element containing the text 'Prendre rendez-vous' to appear
         await page.waitForSelector('a#advanced', { visible: true, timeout: 10000 });
