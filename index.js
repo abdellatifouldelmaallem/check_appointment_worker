@@ -23,6 +23,9 @@ async function check_appointement_worker() {
         console.log('Clicked the "Prendre rendez-vous" button and navigated to Services page');
 
         await page.waitForNavigation({ waitUntil: 'networkidle0', timeout: 60000 });
+        await page.waitForSelector('table', { visible: true });
+        await page.click('table tr:nth-child(3) td a button.button.primary');
+        console.log('Clicked on the second row in the table');
 
     } catch (error) {
         console.log('Error during appointment checking:', error);
